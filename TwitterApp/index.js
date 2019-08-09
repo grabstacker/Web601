@@ -16,6 +16,9 @@ T.get('search/tweets', { q: 'bitcoin, craig wright since:2011-07-11', count: 100
      postTweet = tweets[i].text
     console.log(tweets[i].text)
     }
+
+// posts the retrieved tweets to the twitter account
+//Can put inside the for loop to send out multiple tweets but i think that might break it    
     T.post('statuses/update', { status: ' ' + postTweet }, function(err, data, response) {
         console.log(data)
       })
