@@ -24,3 +24,17 @@ Ali also talked about our wireframes and website.
 
 talked about order of which the variables are added as the program runs
 asynchronous order
+
+installed npm package twit to follow a tutorial on adding outside module and creating a package.json file 
+Commands used
+
+npm init
+npm install twit --save
+
+I also uninstalled the package as i forgot to add the save tag so tha tis usefull
+
+npm -h <-- used to find the unistall commands
+ 
+***TwitterApp***
+
+Created a twitter bot that posts custom search tweets to a twitter account i created. in the TwitterApp folder
