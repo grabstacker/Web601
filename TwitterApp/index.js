@@ -14,7 +14,7 @@ T.get('search/tweets', { q: 'bitcoin, craig wright since:2011-07-11', count: 100
     var postTweet
     for (let i = 0; i < 1; i++){ // <-- adjust this loop to control the amount of tweets to post
      postTweet = tweets[i].text
-    console.log(tweets[i].text)
+    console.log(postTweet)
     }
 
 // posts the retrieved tweets to the twitter account
