@@ -1,3 +1,23 @@
 Will need to pull all my journal entries into this document. 
 
 A commit from local git laptop
+
+
+
+
+
+Class Javascript vars functions and gates (Not sure which week) <-- need to org
+
+This class we talked about logic gates functions and variables
+You call a function by its name 
+function myFunction(){
+    console.log("Message");
+}
+
+myFunction() <--- this is calling the function
+
+we also talked about association and reserved words in Javascript
+function addition(a,b) for example
+const doesnt change let can
+
+Ali also talked about our wireframes and website.
