@@ -21,3 +21,6 @@ function addition(a,b) for example
 const doesnt change let can
 
 Ali also talked about our wireframes and website.
+
+talked about order of which the variables are added as the program runs
+asynchronous order
