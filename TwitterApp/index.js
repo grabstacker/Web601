@@ -6,9 +6,17 @@ var T = new Twit(config)
   
 console.log(config)
 
-T.get('search/tweets', { q: 'craig wright since:2011-07-11', count: 100 }, function(err, data, response) {
+T.get('search/tweets', { q: 'bitcoin, craig wright since:2011-07-11', count: 100 }, function(err, data, response) {
     
     var tweets = data.statuses
-    for (let i = 0; i < 2; i++)
-        console.log(tweets[i].text)
+    var postTweet
+    for (let i = 0; i < 1; i++){
+     postTweet = tweets[i].text
+    console.log(tweets[i].text)
+    }
+    T.post('statuses/update', { status: ' ' + postTweet }, function(err, data, response) {
+        console.log(data)
+      })
 })
+
+
