@@ -45,5 +45,5 @@ function tweetIT() {
 
 
 
-setInterval(tweetIT, 1000 * 60) //sets the interval for searching and posting the tweet
+setInterval(tweetIT, 1000 * 180) //sets the interval for searching and posting the tweet
 tweetIT()
