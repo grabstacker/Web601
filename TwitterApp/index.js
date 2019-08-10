@@ -9,7 +9,7 @@ var T = new Twit(config)
 //This function gets a certain topic and runs a loop of the amount of top tweets to post 
 //to the twitter account. It also posts to log to show what was posted locally
 function tweetIT() {
-    T.get('search/tweets', { q: 'bitcoin, since:2011-07-11', count: 100 }, function (err, data, response) {
+    T.get('search/tweets', { q: 'bitcoin, since:2011-07-11', count: 2 }, function (err, data, response) {
 
         var tweets = data.statuses
         var postTweet
@@ -45,5 +45,5 @@ function tweetIT() {
 
 
 
-setInterval(tweetIT, 1000 * 180) //sets the interval for searching and posting the tweet
+setInterval(tweetIT, 1000 * 400) //sets the interval for searching and posting the tweet
 tweetIT()
