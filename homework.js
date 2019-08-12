@@ -26,3 +26,15 @@ console.log(compare("sd","sd"))
 console.log(isPlural("mouse"))
 console.log(calculatePower(4,5))
 
+// Outputs
+// console.log(addition(2,3))        = 5
+// console.log(remainder(2,3))       = 2
+// console.log(triArea(2,3))         = 3  
+// console.log(nextEdge(2,3))        = 4
+// console.log(nextNumber(2))        = 3
+// console.log(divisible(200))       = true
+// console.log(isEmpty(3))           = false
+// console.log(compare("sd","sd"))   = true
+// console.log(isPlural("mouse"))    = false
+// console.log(calculatePower(4,5))  = 1024
+
