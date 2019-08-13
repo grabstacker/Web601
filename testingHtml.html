@@ -19,12 +19,11 @@
     <input type="button" value="Click me" onclick="msg()">
 
 
-    <!-- React script starts here-->
+    <!-- React babel script starts here
+    uses a variable inside the html jsx code-->
     <script type="text/babel">
-
-        ReactDOM.render(
-        <h1>Hello, world!</h1>, document.getElementById('reactTest') );
-
+        var sample = 5; ReactDOM.render(
+        <h1>ASd {sample*sample}</h1> , document.getElementById('reactTest'));
     </script>
 
     <div id="reactTest"></div>
