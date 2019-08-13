@@ -17,13 +17,17 @@
 
     <p id="p1">Hello World!</p>
     <input type="button" value="Click me" onclick="msg()">
-
+    <input type="button" value="Click me" onclick="alertButton()">
 
     <!-- React babel script starts here
     uses a variable inside the html jsx code-->
     <script type="text/babel">
+        function alertButton(){ alert("you clicked the button " + sample) }
+    </script>
+
+    <script type="text/babel">
         var sample = 5; ReactDOM.render(
-        <h1>ASd {sample*sample}</h1> , document.getElementById('reactTest'));
+        <h1>5 x 5 = {sample*sample}</h1> , document.getElementById('reactTest'));
     </script>
 
     <div id="reactTest"></div>
