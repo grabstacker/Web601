@@ -23,15 +23,13 @@ function msg() {
 //changes the background colour of the canvases on html doc
 function changeColours() {
     for (let i = 0; i < 12; i++) {
-
         const canvas = document.getElementById("newCanvas" + i);
         var ctx = canvas.getContext('2d');
         var num = Math.floor(Math.random() * 200)
-
+            //
         ctx.fillStyle = 'rgb(' + num + ',' +
-            Math.floor(Math.random() * 300) + ', ' +
-            Math.floor(Math.random() * 300) + '';
-
+            Math.floor(Math.random() * 500) + ', ' +
+            Math.floor(Math.random() * 600) + '';
         ctx.fillRect(0, 0, 300, 300);
     }
 

@@ -6,6 +6,11 @@
     <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="./htmlPrac.js"></script>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <!-- react links for standalone access to the codebase babel-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+
 </head>
 
 <body>
@@ -13,23 +18,37 @@
     <p id="p1">Hello World!</p>
     <input type="button" value="Click me" onclick="msg()">
 
-    <p id="p2"></p>
-    <canvas id="newCanvas0" width="300" height="300" style="border: 1px solid #000000" onmouseover="changeColours()"></canvas>
-    <canvas id="newCanvas1" width="300" height="300" style="border: 1px solid #000000" onmouseover="changeColours()"></canvas>
-    <canvas id="newCanvas2" width="300" height="300" style="border: 1px solid #000000" onmouseover="changeColours()"></canvas>
-    <canvas id="newCanvas3" width="300" height="300" style="border: 1px solid #000000" onmouseover="changeColours()"></canvas>
-    <br>
-    <canvas id="newCanvas4" width="300" height="300" style="border: 1px solid #000000" onmouseover="changeColours()"></canvas>
-    <canvas id="newCanvas5" width="300" height="300" style="border: 1px solid #000000" onmouseover="changeColours()"></canvas>
-    <canvas id="newCanvas6" width="300" height="300" style="border: 1px solid #000000" onmouseover="changeColours()"></canvas>
-    <canvas id="newCanvas7" width="300" height="300" style="border: 1px solid #000000" onmouseover="changeColours()"></canvas>
-    <br>
-    <canvas id="newCanvas8" width="300" height="300" style="border: 1px solid #000000" onmouseover="changeColours()"></canvas>
-    <canvas id="newCanvas9" width="300" height="300" style="border: 1px solid #000000" onmouseover="changeColours()"></canvas>
-    <canvas id="newCanvas10" width="300" height="300" style="border: 1px solid #000000" onmouseover="changeColours()"></canvas>
-    <canvas id="newCanvas11" width="300" height="300" style="border: 1px solid #000000" onmouseover="changeColours()"></canvas>
+
+    <!-- React script starts here-->
+    <script type="text/babel">
+
+        ReactDOM.render(
+        <h1>Hello, world!</h1>, document.getElementById('reactTest') );
+
+    </script>
+
+    <div id="reactTest"></div>
+    <!-- React script ends here-->
 
 
+    <br>
+    <div id="conatiner">
+        <p id="p2"></p>
+        <canvas id="newCanvas0" width="300" height="300" style="border: 1px solid #000000" onmouseover="changeColours()"></canvas>
+        <canvas id="newCanvas1" width="300" height="300" style="border: 1px solid #000000" onmouseover="changeColours()"></canvas>
+        <canvas id="newCanvas2" width="300" height="300" style="border: 1px solid #000000" onmouseover="changeColours()"></canvas>
+        <canvas id="newCanvas3" width="300" height="300" style="border: 1px solid #000000" onmouseover="changeColours()"></canvas>
+        <br>
+        <canvas id="newCanvas4" width="300" height="300" style="border: 1px solid #000000" onmouseover="changeColours()"></canvas>
+        <canvas id="newCanvas5" width="300" height="300" style="border: 1px solid #000000" onmouseover="changeColours()"></canvas>
+        <canvas id="newCanvas6" width="300" height="300" style="border: 1px solid #000000" onmouseover="changeColours()"></canvas>
+        <canvas id="newCanvas7" width="300" height="300" style="border: 1px solid #000000" onmouseover="changeColours()"></canvas>
+        <br>
+        <canvas id="newCanvas8" width="300" height="300" style="border: 1px solid #000000" onmouseover="changeColours()"></canvas>
+        <canvas id="newCanvas9" width="300" height="300" style="border: 1px solid #000000" onmouseover="changeColours()"></canvas>
+        <canvas id="newCanvas10" width="300" height="300" style="border: 1px solid #000000" onmouseover="changeColours()"></canvas>
+        <canvas id="newCanvas11" width="300" height="300" style="border: 1px solid #000000" onmouseover="changeColours()"></canvas>
+    </div>
 
 
     <script src="./htmlPrac.js"></script>
