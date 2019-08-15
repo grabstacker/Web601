@@ -39,6 +39,9 @@ npm -h <-- used to find the unistall commands
 
 Created a twitter bot that posts custom search tweets to a twitter account i created. in the TwitterApp folder
 
+***Class Wednesday 14th aug ***
+installed express and looking into importing node modules into our temp projects with npm and express defualt project templates
+
 ***Project Wireframe and Idea***
 I have created a wireframe inside ./WireframeImgs/ that sets out the template css design and colour pallete that will be used in the project. 
 This template will be consistant throughout the website having the content area adjusted for columns to accomodate the different pages in the website.
