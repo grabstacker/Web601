@@ -43,4 +43,8 @@ Created a twitter bot that posts custom search tweets to a twitter account i cre
 I have created a wireframe inside ./WireframeImgs/ that sets out the template css design and colour pallete that will be used in the project. 
 This template will be consistant throughout the website having the content area adjusted for columns to accomodate the different pages in the website.
 
-The idea for the website is to build custom api calls to different cryptocurrency platforms. I will have a series of drop down boxes selecting which platform to make a query on and then the different options to create a call to that api and display the output of that api call on screen, then a place to copy the code that was generated to make that call if the user wants to use it in another application. The basic summary is a place to generate and create API calls to a selection of platforms for the user to customise.
+The idea for the website is to build custom api calls to different cryptocurrency platforms. I will have a series of drop down boxes 
+selecting which platform to make a query on and then the different options to create a call to that api and display
+ the output of that api call on screen, then a place to copy the code that was generated to make that call if the user wants to use it in another application. The basic summary is a place to generate and create API calls to a selection of platforms for the user to customise.
+
+Additional refinement of the wireframes of each page will be added and a discussion with Ali about the technicalities involved in creating this project will be orgranised to confirm details
