@@ -242,7 +242,7 @@ shortcut to the endpoint.
 
 Because each endpoint URL has many options with the commands displaying this is going to have to be quick to enable the user to see all 
 possible options fast enough to be effecient. As the user moves the mouse over the different end points the list of commands for that
-endpoint are instantly displayed in some form kind of seperate coloumn box that can be clicked and selected to add to the api call. 
+endpoint are instantly displayed in a seperate coloumn box that can be clicked and selected to add to the api call. 
 
 This will concatenate onto the query being created along with the custom input the user enters. 
 Possible endpoint filtering of urls could be feed into an list or dictionary that stores a string value of that directory API url. 
