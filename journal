@@ -213,3 +213,11 @@ Nakamoto" published the Bitcoin Whitepaper and described it as: "a purely peer-t
         tags: [Array],
         platform: null,
         category: 'coin' }
+
+
+
+
+
+************ IDEA i may create a form to submit API urls and the different commands and directorys that can be accessed. This may be a good
+option as the dynamic processing of an API may be to complex to implement in this project. That way new APIs
+can easily be setup and configured.***********
