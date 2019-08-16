@@ -116,3 +116,45 @@ app.listen(3000){
 
 codeacademy react1 and 2
 and look at gitbook updated
+
+
+******************Website Breakdown and Meeting with Ali********************
+Have discussed the project idea with ali and will start research on implementation
+of the different main elements that are required to make it work.
+Using an user interface to react with the input and output on the http request to the
+api I can list the requirements of the query to the user and take the custom commands
+from the form to inject into the url construction. 
+
+Node.js has an libary called SuperAgent
+which accepts the input of query() which I can use to pass custom calls to different APIs.
+All though there are several different options available this one seems to fit the best
+for my usecase.
+
+I have installed this to my test directory to look around through the code and readme file
+with the below module install command.
+
+npm install superagent
+
+const superagent = require('superagent');
+
+superagent.get('https://api.nasa.gov/planetary/apod')
+.query({ api_key: 'DEMO_KEY', date: '2017-08-02' })  <---- This is where the custom calls are made.
+.end((err, res) => {
+  if (err) { return console.log(err); }
+  console.log(res.body.url);
+  console.log(res.body.explanation);
+});
+
+This query can be run in browser to be tested in a section that displays output below 
+where the user customises the API request and can save the query to their account for
+returning users.
+
+What would be great is to figure out a way in order to automatically handle any API that
+is say added to the website by a user requesting to submit their api to be publically useable
+and accessable in order to expand the websites API options immensley. (that may be outside
+of the scope of this course though) 
+****Possible identification of certain common api call and variable inputs will have to be looked into
+aswell as how the url is constructed compared to other api applications
+
+A user will be able to log into the website and access previous saved queries and export
+thoughs queries externally for use elsewhere, maybe another application for example.
