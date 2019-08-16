@@ -221,3 +221,8 @@ Nakamoto" published the Bitcoin Whitepaper and described it as: "a purely peer-t
 ************ IDEA i may create a form to submit API urls and the different commands and directorys that can be accessed. This may be a good
 option as the dynamic processing of an API may be to complex to implement in this project. That way new APIs
 can easily be setup and configured.***********
+
+*****Another idea: If i could find a directory tree some how of all the possible urls from the api and the different commands 
+this could be filtered into a data structure in order for the user to find their way to the endpoint of the API call through
+drop down menus that autopopulate the next parameters that are options in that area of the directory. There might be a module that can request
+this data or automatically fetch it so i can process routes in the API request generation****** 
