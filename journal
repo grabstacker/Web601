@@ -88,8 +88,28 @@ table 2 ->  booking,age->  table 4 ->  message''
      ^       app.use();    app.get()    res.send() |
      <----------------------------------------------
 
+const express = require('express')
+const tableRoute = express.Router()
+tableRoute.use(function(req,res,next)){
+    var booking = req.booking
+    var age = req.age
+    if(booking && age){
+        next();
+    }
+}
 
+
+// reusing tableRoute to apply the same rules to the Bar
+tableRoute.use('/bar',function(req,res,next)){
+
+    var age = req.age;
+    if (age >= 18){
+        next();
+    }
+}
 
 
 Application
-
+app.listen(3000){
+    console.log('Running port 3000')
+} <--listens on the port for requests

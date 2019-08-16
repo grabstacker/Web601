@@ -1,6 +1,5 @@
 document.getElementById("p1").innerHTML = "working!";
 var change = true
-
 //changes some text and interacts with the button
 function msg() {
 
