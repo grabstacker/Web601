@@ -226,3 +226,22 @@ can easily be setup and configured.***********
 this could be filtered into a data structure in order for the user to find their way to the endpoint of the API call through
 drop down menus that autopopulate the next parameters that are options in that area of the directory. There might be a module that can request
 this data or automatically fetch it so i can process routes in the API request generation****** 
+
+
+Found NPM module https://www.npmjs.com/package/@octokit/endpoint which can possibly help me filter the urls into automatic options on
+the form so no setup of a new API is required. dynamically generating menu options.
+An API url can be entered by anyone and once added generates a menu tree based off the url structure and commands at the endpoints that
+are available. 
+This way each user has his own private set of querys as apposed to the public list that can be used by anyone.
+
+Only a list of the possible endpoints is needed. The menu will have the url displayed but you must select an endpoint to make a call to
+the api on. Once the Endpoint is selected, the list of possible commands are displayed for that endpoint which can be entered into the
+input box. Going through a menu path as the opposite option means going through directories without seeing the options after that directory
+level that is currently being viewed. This could be detrimental to the user making the correct choice and should be bypassed by a selection
+shortcut to the endpoint. This will concatenate onto the query being created along with the custom input the user enters. 
+Possible endpoint filtering of urls could be feed into an list or dictionary that stores a string value of that directory API url. 
+When the user selects a radio button or checkbox of the endpoint the string is passed to the display field and the query is finished by the user then
+sent to the superagent module to be run (not sure if i still need superagent if the call is being completly constructed in the previous
+steps? All though the command options could be passed seperatly to super agent aswell rather than being concatenated before hand). 
+The module returns the data and is displayed on screen along with a button to "Save this query" which
+will be tied into the dictionary of saved api calls for each user in their private account.
