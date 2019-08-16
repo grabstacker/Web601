@@ -250,3 +250,6 @@ API Keys
 When a user creates a new query there will be an option to enter the api key in a seperate box. This will be passed to superagent along with the commands
 as the previous idea only constructs the url and does not attach a apikey. and creating a fully constructed url instead of only passing the directory
 may disrupt how superagent works. Will have to look into this a bit more.
+
+I may not need superagent. Is there any benefit over using super agent as apposed to request-promise for passing the request and returning results?
+. Will look into this more. but i think superagent might have nicer formatting cababilities for output.
