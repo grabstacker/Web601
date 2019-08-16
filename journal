@@ -245,3 +245,8 @@ sent to the superagent module to be run (not sure if i still need superagent if 
 steps? All though the command options could be passed seperatly to super agent aswell rather than being concatenated before hand). 
 The module returns the data and is displayed on screen along with a button to "Save this query" which
 will be tied into the dictionary of saved api calls for each user in their private account.
+
+API Keys
+When a user creates a new query there will be an option to enter the api key in a seperate box. This will be passed to superagent along with the commands
+as the previous idea only constructs the url and does not attach a apikey. and creating a fully constructed url instead of only passing the directory
+may disrupt how superagent works. Will have to look into this a bit more.
