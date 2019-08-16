@@ -1,12 +1,9 @@
 const rp = require('request-promise');
 const requestOptions = {
     method: 'GET',
-    uri: 'https://sandbox-api.coinmarketcap.com/v1/exchange/listings/latest',
+    uri: 'https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/info',
     qs: {
-        'start': '1',
-        'limit': '2',
-        'sort': 'volume_24h_adjusted',
-        'sort_dir': 'desc'
+        'symbol': 'BTC'
     },
     headers: {
         'X-CMC_PRO_API_KEY': 'ec9fe84b-fe7c-4d71-8aea-154b9acc0bca'
