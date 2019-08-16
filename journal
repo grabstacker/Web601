@@ -238,7 +238,13 @@ Only a list of the possible endpoints is needed. The menu will have the url disp
 the api on. Once the Endpoint is selected, the list of possible commands are displayed for that endpoint which can be entered into the
 input box. Going through a menu path as the opposite option means going through directories without seeing the options after that directory
 level that is currently being viewed. This could be detrimental to the user making the correct choice and should be bypassed by a selection
-shortcut to the endpoint. This will concatenate onto the query being created along with the custom input the user enters. 
+shortcut to the endpoint. 
+
+Because each endpoint URL has many options with the commands displaying this is going to have to be quick to enable the user to see all 
+possible options fast enough to be effecient. As the user moves the mouse over the different end points the list of commands for that
+endpoint are instantly displayed in some form kind of seperate coloumn box that can be clicked and selected to add to the api call. 
+
+This will concatenate onto the query being created along with the custom input the user enters. 
 Possible endpoint filtering of urls could be feed into an list or dictionary that stores a string value of that directory API url. 
 When the user selects a radio button or checkbox of the endpoint the string is passed to the display field and the query is finished by the user then
 sent to the superagent module to be run (not sure if i still need superagent if the call is being completly constructed in the previous
