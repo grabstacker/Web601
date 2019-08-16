@@ -54,4 +54,42 @@ Additional refinement of the wireframes of each page will be added and a discuss
 
 
 ***Class 16/08/19***
+each page has its on express logic behind it
+
+Require
+const require = require('express')
+
+Middleware
+To make sure the below understands what the code below is calling
+
+
+app.use('table',function(req,res,next))
+
+app.use('table'(req,res,next) =>{
+var booking = req.booking
+var age =  req.age
+if (booking && age){
+next();
+}});
+
+Routes
+app.get('/table/:amount',function(req,res) =>+{
+var dinner = req.params.amount
+res.send('looking for table'+ dinner)
+})
+
+Params is looking like this 
+req {params:{amount:4}}
+
+FLOW OF PROGRAM
+
+Customer -> Middleware -> Middleware -> Response
+table 2 ->  booking,age->  table 4 ->  message''
+     ^       app.use();    app.get()    res.send() |
+     <----------------------------------------------
+
+
+
+
+Application
 
