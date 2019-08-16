@@ -113,3 +113,6 @@ Application
 app.listen(3000){
     console.log('Running port 3000')
 } <--listens on the port for requests
+
+codeacademy react1 and 2
+and look at gitbook updated
