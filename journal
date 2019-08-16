@@ -158,3 +158,46 @@ aswell as how the url is constructed compared to other api applications
 
 A user will be able to log into the website and access previous saved queries and export
 thoughs queries externally for use elsewhere, maybe another application for example.
+
+Using request Promise to access the CoinMarketCap API
+
+npm install --save request
+npm install --save request-promise
+
+reuest must be installed first followed by request-promise
+
+*********SandBox Node.js API request call for testing the account works**********
+
+const rp = require('request-promise');
+const requestOptions = {
+    method: 'GET',
+    uri: 'https://sandbox-api.coinmarketcap.com/v1/exchange/listings/latest',
+    qs: {
+        'start': '1',
+        'limit': '2',
+        'sort': 'volume_24h_adjusted',
+        'sort_dir': 'desc'
+    },
+    headers: {
+        'X-CMC_PRO_API_KEY': 'ec9fe84b-fe7c-4d71-8aea-154b9acc0bca'
+    },
+    json: true,
+    gzip: true
+};
+
+rp(requestOptions).then(response => {
+    console.log('API call response:', response);
+}).catch((err) => {
+    console.log('API call error:', err.message);
+});
+
+********RUN AND RETURN RESULTS*******
+
+$ node coinMarketCapAPI.js
+API call response: { status:
+   { timestamp: '2019-08-16T13:23:44.103Z',
+     error_code: 0,
+     error_message: null,
+     elapsed: 7,
+     credit_count: 0 },
+  data: [] }
