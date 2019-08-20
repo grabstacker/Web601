@@ -286,3 +286,58 @@ var myVar = request(requestOptions.url);
 
 Have started working on npm install --save resource-path
 Seems it has better capabilities in dealing with api endpoints
+
+********************Class 21/08/2019**************************
+
+https://google.com/#q=express
+http://www.yahoo.com/search?q=ali&first=3 <-- sub domain is www
+http://localhost:4200/home?test=1#history
+
+port needs to be above 1023 as below is reserved
+
+protocol = https:
+host = google.com , http://8.8.8.8:1234
+port = 4200 <-- each server has a port for your installation
+path = home
+querystring = ?q=ali&first=3 
+fragment (hash) = #history
+
+HTTP Request methods
+
+---request headers---
+app.get('/headers',function(req,res)){
+    res.set('Content-Type','text/plain')
+    var s = ''
+    for(var name in req.headers) s += ':' + req.header[name]
+    res.send(s)
+})
+
+Request Object
+
+req.params
+req.query
+req.body
+req.route <-- need to look into this a bit more
+req.headers
+
+Response Object
+res.status() <-- 200 is ok <-- 404 page not found <-- 500 server error
+res.json() or res.json(status, json)
+
+How the internet works for developer video
+
+minified -min.js is a compression thingy for .js speed
+browser requests
+assests are files .js .html etc etc
+
+*********GET POST PUT DELETE <-- how the data is passed around the servers with requests
+
+FRIDAY CLASS --> setup enviroment, 
+talk about react and install react boilerplate, 
+talk about JSX and webpack,
+Then use components
+Routers
+CSS styles
+3rd party packages
+NPM packages
+Folder structure
