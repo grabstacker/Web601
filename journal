@@ -259,3 +259,30 @@ may disrupt how superagent works. Will have to look into this a bit more.
 
 I may not need superagent. Is there any benefit over using super agent as apposed to request-promise for passing the request and returning results?
 . Will look into this more. but i think superagent might have nicer formatting cababilities for output.
+
+**********CODE SNIPPET*******************
+I dont think ill need this but im saving it here in case.
+
+const { endpoint } = require("@octokit/endpoint");
+const request = require("request");
+const myProjectEndpoint = endpoint.defaults({
+  baseUrl: "https://github-enterprise.acme-inc.com/api/v3",
+  headers: {
+    "user-agent": "myApp/1.2.3"
+  },
+  org: "my-project"
+});
+const requestOptions = myProjectEndpoint("GET /orgs/:org/repos", {
+  headers: {
+    authorization: "token 0000000000000000000000000000000000000001"
+  },
+  org: "octokit",
+  type: "private"
+});
+
+var myVar = request(requestOptions.url);
+
+************************************************************************************
+
+Have started working on npm install --save resource-path
+Seems it has better capabilities in dealing with api endpoints
