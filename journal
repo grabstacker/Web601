@@ -341,3 +341,37 @@ CSS styles
 3rd party packages
 NPM packages
 Folder structure
+
+**********PROJECT UPDATE CHANGING PATH************************
+
+I have decided after all of the above research that handling API urls
+dynamically is possible but probly outside of the scope of this course and
+a bit to complex. I have learnt alot about apis and interactions but amount
+changing paths in my project design
+
+The project will now be focused and based around a single api from the Opacity.io API
+
+Opacity is a file storage service that has an public api that does not require access tokens
+for getting files from the servers.
+I will utilize this to create a image sharing website like imgur.com.
+The user can add images to the website in the public area and save image list in thier private account 
+
+https://www.opacity.io/share#handle=2a556bc6602190f712d749f274effb4f0
+
+the above is a shortened (and not working because of that i shortended the handle) version of
+format of a file. The project will have a section to submit and share these files to a public list
+
+this list will be able to be sorted into different categories for example "memes" "nature" "cars"
+and the submission form will accomodate this categorization.
+The images are displayed randomly on the front page and can be sorted as a preference aswell.
+The user can download the file after seeing it presented in the browser as a viewable image.
+
+The user can also log in and save thier own list of public handles to access later.
+As the format of the handle is based around the encrypted public file handle, this
+is all i will need to store in a db to link the file. The stored handle will be the unique
+id KEY along side a title and description and some meta data about the file size and creation date etc.
+
+A rating system would be a nice feature that enables the logged in accounts to upvote images in thier
+respective categories to be sorted by rank. I dont know if i will implement this unless i have time.
+
+I will change the wireframe to accomodate the new design.
