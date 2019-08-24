@@ -376,5 +376,7 @@ respective categories to be sorted by rank. I dont know if i will implement this
 
 I will change the wireframe to accomodate the new design.
 
-**** Idea. Have the navigation at as a checkbox that adds different components to the screen so the user
-can completely customise what functions they want to access. 
+**** Idea. Have the navigation as a checkbox style that adds different components to the screen so the user
+can completely customise what functions they want to access. The nav buttons stay indented and the content
+loads into the same screen. Clicking it again returns the button to its normal poped out state and the content
+disapeers
