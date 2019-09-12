@@ -1,3 +1,3 @@
-# Web601
+# WEB601
 
-This repository is Mainly for the journal entries 
+This repository contains various journal entries and test code for the WEB601 class.
